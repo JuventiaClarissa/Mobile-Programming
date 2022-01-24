@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".detailMenu"
+    android:orientation="vertical"
+    >
+
+    <Button
+        android:id="@+id/backBtn"
+        android:layout_width="45dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="16dp"
+
+        android:background="@drawable/bg_button"
+        android:drawableTop="@drawable/ic_baseline_arrow_back"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_gravity="center">
+
+        <ImageView
+            android:id="@+id/menuImg"
+            android:layout_width="300dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center"
+            />
+        <TextView
+            android:id="@+id/detailMenu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Menu"
+            android:layout_margin="5dp"
+            android:textSize="20dp"
+            android:fontFamily="sans-serif"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            />
+        <TextView
+            android:id="@+id/detailPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Price"
+            android:layout_margin="5dp"
+            android:textSize="20dp"
+            android:fontFamily="sans-serif"
+            android:layout_gravity="center"
+            />
+        <TextView
+            android:id="@+id/detailRating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rating"
+            android:layout_margin="5dp"
+            android:textSize="15dp"
+            android:fontFamily="sans-serif"
+            android:layout_gravity="center"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            >
+
+            <TextView
+                android:layout_width="113dp"
+                android:layout_height="45dp"
+                android:text="Quantity: "
+                android:gravity="center"
+                android:layout_margin="20dp"
+                />
+
+            <EditText
+                android:id="@+id/quantityDetail"
+                android:layout_width="118dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_margin="20dp"
+                android:inputType="numberSigned"
+                />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/orderBtn"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Order"
+            android:layout_gravity="center"
+            />
+    </LinearLayout>
+
+</LinearLayout>
